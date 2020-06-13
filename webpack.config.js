@@ -1,7 +1,8 @@
 // uses javascript and nodejs syntax
 const path = require('path');
 module.exports = {
-      mode: 'development',   // <-- here we are building for development mode and we will have fewer optimizations, make debugging easier etc..
+
+      mode: 'devlopment',
       // this is when our program starts which file to look for first
       entry : './src/app.ts',
       // this is an object where we first of all specify the filename which will 
