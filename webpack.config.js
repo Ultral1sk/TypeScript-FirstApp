@@ -1,6 +1,7 @@
 // uses javascript and nodejs syntax
 const path = require('path');
 module.exports = {
+
       mode: 'devlopment',
       // this is when our program starts which file to look for first
       entry : './src/app.ts',
@@ -12,7 +13,7 @@ module.exports = {
             // and it should match with the outDir Key in the ts.json config
             // but webpack wants an apsolute path which we provide with the build in module "path" whichi will provide us with the asbsolute path 
             path : path.resolve(__dirname, 'dist'),
-            publicPath: 'dist'
+            publicPath: 'dist' // <- additional configuration for webpack to understand where the output is written to  and where it is relative to the index.html file
       },
 
       devtool: 'inline-source-map',
