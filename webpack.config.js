@@ -12,6 +12,8 @@ module.exports = {
             // but webpack wants an apsolute path which we provide with the build in module "path" whichi will provide us with the asbsolute path 
             path : path.resolve(__dirname, 'dist')
       },
+
+      devtool: 'inline-source-map',
       //with the module file we tell webpack what to do with the files that is going to find. ex : like translating ts into js etc..
       module: {
             //multiple rules are allowed
